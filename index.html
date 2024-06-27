@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align block elements</title>
+  <style>
+    p {
+      margin: 110px 30px;
+      text-align: justify;
+    }
+
+    .container {
+      align-items: center;
+      float: left;
+      padding: 0;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+
+    }
+
+    .top-side {
+      
+      height: 300px;
+      align-items: center;
+
+    }
+
+    .bottom-side {
+
+      height: 300px;
+      background-color: white;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -100px;
+      border-radius: 100%;
+    }
+
+    .main {
+      background-color: lightgray;
+      width: 100%;
+      display: flex;
+      justify-content: stretch;
+    }
+
+    .main>h1 {
+  
+      position: absolute;
+      left: 40%;
+    }
+    .bottom-side>a{
+      display: block;
+      color: black;
+      text-align: center;
+      text-decoration:underline;
+    }
+    @media  (max-width: 950px){
+      .main{
+        flex-direction: column;
+        float: none;
+      }
+      .top-side>h2{
+        padding: 30px;
+      }
+      .main>h1{
+        position: absolute;
+        left: 30%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Competitive Advantages</h1>
+    <div class="container">
+      <div class="top-side">
+        <!-- 1. -->
+        <h2 style="margin: 100px;">Durability</h2>
+      </div>
+      <img class="circle" src="img102.jpg">
+      </img>
+      <div class="bottom-side">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus exercitationem voluptas! Similique
+          amet minima explicabo dignissimos consectetur animi et voluptatem unde cupiditate voluptas ipsum eius,
+          voluptatibus iure esse aperiam.</p>
+          <a href="#">MORE</a>
+      </div>
+
+
+    </div>
+    <div class="container">
+      <div class="top-side">
+        <h2 style="margin: 100px;">Efficiency</h2 >
+
+
+      </div>
+      <img class="circle" src="img101.png">
+
+      </img>
+      <div class="bottom-side">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit placeat esse maxime fuga repudiandae corrupti
+          ipsam saepe dolorum. Ab deleniti impedit consequuntur neque dolorum quod, vero obcaecati odit numquam
+          molestiae?
+        </p>
+        <a href="#">MORE</a>
+      </div>
+
+
+    </div>
+    <div class="container">
+      <div class="top-side">
+        <h2 style="margin: 100px;">Efficiency</h2>
+        <!-- 1. -->
+      </div>
+      <img class="circle" src="img100.jpg">
+      <!-- 3. Contains the image -->
+      </img>
+      <div class="bottom-side">
+        <!-- 2. -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure veniam maxime animi officiis voluptates natus
+          veritatis voluptatem dolorem hic velit, commodi, facere, iste pariatur? Illo amet possimus impedit nulla
+          cupiditate.</p>
+          <a href="#">MORE</a>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
